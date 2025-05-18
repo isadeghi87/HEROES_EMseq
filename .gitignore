@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But don’t ignore these files:
+!.gitignore
+!**/*.R
+!**/*.sh
+!**/*.bash
+!**/*.nf
+
