@@ -1,0 +1,1 @@
+bsub -R "rusage[mem=100G]" -n 20 -q long < gistic2.sh
