@@ -87,4 +87,4 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 2. Run Nextflow:
    ```bash
    cd codes/nextflow
-   nextflow run nf-core/methylseq -profile odcf --input ../../datasets/samples_sheet.tsv ```
+   nextflow run nf-core/methylseq -profile odcf --input ../../datasets/samples_sheet.tsv
