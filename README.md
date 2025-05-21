@@ -97,7 +97,7 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 2. **Run Nextflow**:
    ```bash
    cd codes/nextflow
-   nextflow run nf-core/methylseq -profile odcf --input ../../datasets/samples_sheet.tsv```
+   nextflow run nf-core/methylseq -profile odcf --input ../../datasets/samples_sheet.tsv
 3. **QC Summary**:
 
    ```bash
@@ -107,10 +107,10 @@ Rscript summarize_qc.R --input ../../results/nextflow/bismark```
 4. **DMR Analysis**: 
    ```bash
 cd codes/dmr
-python run_dmr.py --calls ../../data/methylation_calls/ --output ../../results/dmr/```
+python run_dmr.py --calls ../../data/methylation_calls/ --output ../../results/dmr/
 
 5. **CNV Calling**:
 
   ```bash
 cd codes/cnv_calling/cfdna
-bash run_cfdna.sh --bam ../../results/nextflow/bismark/deduplicated/*.bam```
+bash run_cfdna.sh --bam ../../results/nextflow/bismark/deduplicated/*.bam
