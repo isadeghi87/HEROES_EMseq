@@ -24,7 +24,7 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 
 ## Directory Structure
 
-
+<prev>
 ├── codes/
 │   ├── nextflow/           # nf-core/methylseq pipeline
 │   ├── dmr/                # DMR analysis scripts
@@ -45,6 +45,7 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 │   │   └── figures/
 │   └── biscuit_pipeline/
 └── README.md
+</prev>
 
 
 ## Code Modules
