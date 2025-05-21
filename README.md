@@ -48,44 +48,53 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 </prev>
 
 
+
+---
+
 ## Code Modules
 
-### `codes/nextflow`
-- nf-core/methylseq via Nextflow: alignment, deduplication, methylation calls.
+### 1. `codes/nextflow`
+- Implements the [nf-core/methylseq](https://github.com/nf-core/methylseq) pipeline using Nextflow.
+- Produces alignment (Bismark), deduplication, and methylation call outputs.
 
-### `codes/dmr`
-- Identify & annotate differentially methylated regions.
+### 2. `codes/dmr`
+- Scripts for identifying and annotating differentially methylated regions across samples.
 
-### `codes/qc_summary`
-- Aggregate QC metrics (coverage, duplication rate, etc.).
+### 3. `codes/qc_summary`
+- Aggregates QC metrics (e.g., coverage, duplication rate) across EMSeq samples into summary reports.
 
-### `codes/sample_prep`
-- Generate sample manifests & FASTQ lists.
+### 4. `codes/sample_prep`
+- Generates input manifests and FASTQ file lists required by the Nextflow pipeline.
 
-### `codes/cnv_calling`
-- CNV detection on cfDNA (use **cfdna/** only).
+### 5. `codes/cnv_calling`
+- Focuses on CNV detection from cfDNA data.
+- **Use the `cfdna/` tool**—other scripts or tools in this directory are deprecated for liquid biopsy analyses.
+
+---
 
 ## Data Files
+- **Normalized methylation calls** are stored in `data/methylation_calls/`. These tables are used as input for downstream DMR analysis in the `codes/dmr/` module.
+- **Sample sheets** in `datasets/` define sample metadata (IDs, paths, groups) for pipeline runs.
 
-- `data/methylation_calls/`: normalized methylation-call tables.  
-- `datasets/samples_sheet.tsv`: sample metadata for pipeline.
+---
 
 ## Results
 
-### `results/nextflow`
-- `bismark/deduplicated/`: BAMs for CNV calling.  
-- `bismark/methylation_calls/`: cytosine-call files for DMR.
+### Nextflow Pipeline Outputs (`results/nextflow`)
+- **`bismark/deduplicated/`**: Deduplicated BAM files for CNV calling.
+- **`bismark/methylation_calls/`**: Cytosine call files for DMR analysis.
 
-### `results/dmr`
-- `figures/`: DMR plots & heatmaps.
+### DMR Analysis (`results/dmr`)
+- **Figures**: Plots and heatmaps summarizing differentially methylated regions.
 
-### `results/biscuit_pipeline`
-- Prototype scripts for Biscuit benchmarking.
+### Biscuit Pipeline (`results/biscuit_pipeline`)
+- Prototype scripts for running the [Biscuit](https://informatics.fas.harvard.edu/biscuit/) toolchain. Modify and re-run these to benchmark against Nextflow results.
+
+---
 
 ## Usage
-
-1. Prepare samples: edit `datasets/samples_sheet.tsv`.  
-2. Run Nextflow:
+1. **Prepare samples**: Edit `datasets/samples_sheet.tsv` with sample metadata.  
+2. **Run Nextflow**:
    ```bash
    cd codes/nextflow
    nextflow run nf-core/methylseq -profile odcf --input ../../datasets/samples_sheet.tsv
