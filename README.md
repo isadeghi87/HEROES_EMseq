@@ -4,7 +4,6 @@
 
 This repository contains code and results for analysis of EMSeq (Enzymatic Methyl-seq) data from liquid biopsy samples in pediatric tumors.
 
----
 
 ## Table of Contents
 1. [Project Overview](#project-overview)  
@@ -16,7 +15,6 @@ This repository contains code and results for analysis of EMSeq (Enzymatic Methy
 7. [Contributing](#contributing)  
 8. [License](#license)  
 
----
 
 ## Project Overview
 The goal of this project is to perform comprehensive DNA methylation analysis using EMSeq data derived from liquid biopsy samples of pediatric tumors. Analyses include read alignment, quality control, differential methylation region (DMR) detection, and copy number variation (CNV) calling.
