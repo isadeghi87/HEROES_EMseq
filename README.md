@@ -22,8 +22,6 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 - `/omics/odcf/analysis/OE0290_projects/pediatric_tumor/whole_genome_biosulfite_sequencing/`
 - `/omics/odcf/analysis/OE0290_projects_temp/pediatric_tumor/EMseq/`
 
-## Directory Structure
-
 
 ## Directory Structure
 
