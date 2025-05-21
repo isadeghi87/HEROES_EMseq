@@ -102,7 +102,7 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 3. **QC Summary**:
 ```bash
 cd codes/qc_summary
-Rscript summarize_qc.R --input ../../results/nextflow/bismark```
+Rscript summarize_qc.R --input ../../results/nextflow/bismark
    ```
 4. **DMR Analysis**: 
 ```bash
