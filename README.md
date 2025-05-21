@@ -20,8 +20,8 @@ This repository contains code and results for analysis of EMSeq (Enzymatic Methy
 The goal of this project is to perform comprehensive DNA methylation analysis using EMSeq data derived from liquid biopsy samples of pediatric tumors. Analyses include read alignment, quality control, differential methylation region (DMR) detection, and copy number variation (CNV) calling.
 
 **Main directories:**
-- \`/omics/odcf/analysis/OE0290_projects/pediatric_tumor/whole_genome_biosulfite_sequencing/\`
-- Temporary working directory with up-to-date code and results: \`/omics/odcf/analysis/OE0290_projects_temp/pediatric_tumor/EMseq/\`
+- `/omics/odcf/analysis/OE0290_projects/pediatric_tumor/whole_genome_biosulfite_sequencing/`
+- Temporary working directory with up-to-date code and results: `/omics/odcf/analysis/OE0290_projects_temp/pediatric_tumor/EMseq/`
 
 ---
 
