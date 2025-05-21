@@ -25,26 +25,32 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 ## Directory Structure
 
 
-├── codes/
-│   ├── nextflow/           # nf-core/methylseq pipeline
-│   ├── dmr/                # DMR analysis scripts
-│   ├── qc_summary/         # QC summary scripts
-│   ├── sample_prep/        # Input preparation for pipelines
-│   └── cnv_calling/        # CNV calling (use cfdna/ only)
-│       └── cfdna/
-├── data/
-│   └── methylation_calls/  # Normalized calls for DMR
-├── datasets/
-│   └── samples_sheet.tsv   # Sample metadata
-├── results/
-│   ├── nextflow/
-│   │   ├── bismark/
-│   │   │   ├── deduplicated/
-│   │   │   └── methylation_calls/
-│   ├── dmr/
-│   │   └── figures/
-│   └── biscuit_pipeline/
-└── README.md
+## Directory Structure
+
+- **codes/**
+  - **nextflow/**: nf-core/methylseq pipeline  
+  - **dmr/**: DMR analysis scripts  
+  - **qc_summary/**: QC summary scripts  
+  - **sample_prep/**: Input preparation for pipelines  
+  - **cnv_calling/**
+    - **cfdna/**: cfDNA CNV calling tool  
+
+- **data/**
+  - **methylation_calls/**: Normalized tables for DMR analysis  
+
+- **datasets/**
+  - **samples_sheet.tsv**: Sample metadata manifest  
+
+- **results/**
+  - **nextflow/**
+    - **bismark/**
+      - **deduplicated/**: BAMs for CNV calling  
+      - **methylation_calls/**: Cytosine calls for DMR analysis  
+  - **dmr/**
+    - **figures/**: DMR plots & heatmaps  
+  - **biscuit_pipeline/**: Biscuit benchmarking scripts  
+
+- **README.md**: This file
 
 
 
