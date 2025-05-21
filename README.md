@@ -88,7 +88,7 @@ The goal of this project is to perform comprehensive DNA methylation analysis us
 - **Figures**: Plots and heatmaps summarizing differentially methylated regions.
 
 ### Biscuit Pipeline (`results/biscuit_pipeline`)
-- Prototype scripts for running the [Biscuit](https://informatics.fas.harvard.edu/biscuit/) toolchain. Modify and re-run these to benchmark against Nextflow results.
+- Prototype scripts for running the [Biscuit](https://huishenlab.github.io/biscuit/) toolchain. Modify and re-run these to benchmark against Nextflow results.
 
 ---
 
